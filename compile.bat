@@ -1,1 +1,1 @@
-javac -sourcepath src -classpath classes src\com\start\test\Hello.java -d classes
+javac -sourcepath src -classpath classes;lib/junit-3.8.1.jar src\com\start\test\*.java -d classes
