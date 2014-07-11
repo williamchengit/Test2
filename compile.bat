@@ -1,0 +1,1 @@
+javac -sourcepath src -classpath classes src\com\start\test\Hello.java -d classes
