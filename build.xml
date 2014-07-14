@@ -40,6 +40,16 @@
 		</jar>
 	</target>
 	
+	<target name="test" depends="compile">
+		<junit printsummary="yes">
+			<classpath refid="junit.class.path" />
+			
+			<batchtest fork="yes">
+				<fileset dir="${src}" includes="*Test.java"/>
+			</batchtest>
+		</junit>
+	</target>
+	
 	
 	<target name="clean" description="clean up">
 		<delete dir="${build}"/>
